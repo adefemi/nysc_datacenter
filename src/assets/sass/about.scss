@@ -1,0 +1,41 @@
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  grid-gap: 2em;
+  position: relative;
+
+  img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    border: 2px solid $greenColor;
+    border-radius: 10px;
+  }
+}
+
+.about-content{
+  ul{
+    display: flex;
+    padding: 0;
+    margin: 20px 0;
+    color: darken(white, 70%);
+
+    li{
+      list-style: none;
+      min-width: 300px;
+
+      &:first-child{
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.about-main{
+  color: darken(white, 70%);
+  line-height: 30px;
+
+  span{
+    font-weight: 500;
+  }
+}

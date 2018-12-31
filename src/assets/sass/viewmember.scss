@@ -1,0 +1,120 @@
+.member-info{
+  position: relative;
+
+  p{
+    text-transform: capitalize;
+  }
+
+  .form-group{
+    img{
+      width: 300px;
+      height: 100px;
+      margin-right: 10px;
+
+    }
+    label, input{
+      display: block;
+    }
+    margin: 40px 0 !important;
+    margin-right: 20px;
+    label{
+      font-weight: 400;
+      color: darken(white, 70%);
+      font-size: 15px;
+      font-family: $sansFont;
+    }
+
+    p{
+      min-width: 300px;
+      outline: none;
+      font-size: 15px;
+      line-height: 30px;
+      margin-top: 5px;
+
+      &:focus{
+        border-color: $greenColorLight;
+      }
+    }
+
+    textarea{
+      width: 620px;
+      border: 1px solid $whiteGray;
+      outline: none;
+      padding: 5px;
+
+      &:focus{
+        border-color: $greenColorLight;
+      }
+    }
+
+
+  }
+
+  .inline-form-group{
+    display: flex;
+    align-items: center;
+    label{
+      display: block;
+    }
+    input{
+      width: 20px;
+      height: 20px;
+      border: 1px solid $whiteGray;
+      outline: none;
+      padding-left: 10px; box-sizing: border-box;
+      margin-right: 10px;
+    }
+  }
+
+  h4{
+    font-weight: 500;
+    padding: 10px 0;
+    border-bottom: 1px solid $whiteGray;
+  }
+
+  .inline-input{
+    display: flex;
+
+    .form-group{
+      margin: 10px 0 !important;
+    }
+  }
+
+  .passport{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border: 1px solid $whiteGray;
+    font-size: 14px;
+    font-weight: 400;
+    color: darken(white, 70%);
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+
+    &:hover{
+      border-color: $greenColorLight;
+    }
+  }
+}
+
+.controls{
+  button{
+    margin-right: 20px !important;
+  }
+
+  button.print{
+    background-color: $yellowColorDark !important;
+    color: white !important;
+    border-color: $yellowColorDark !important;
+
+    &:hover{
+      background-color: darken($yellowColorDark, 20%) !important;
+      color: white !important;
+      border-color: darken($yellowColorDark, 20%) !important;
+    }
+  }
+}
